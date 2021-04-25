@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 7</title>
+<meta charset="utf-8">
+<meta name="description" content="working with forms from float CSS to grid">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+form {
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid black;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+form input {
+  margin-bottom: 1rem;
+  background: white;
+  border: 1px solid #9c9c9c;
+}
+label {
+  text-align: right;
+  display: block;
+  padding: 0.5em 1.5em 0.5em 0;
+}
+
+.myinput {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+input:focus {
+  background-color: gold;
+}
+form div { text-align:center; }
+input[type="submit"], input[type="reset"] {
+  background: lightgray;
+  padding: 0.7em;
+  border: 0;
+}
+h1 { text-align: center; font-style: italic; color: gold; }
+
+ select, option, input, label, button{
+            padding: 0.2rem 1rem;
+            font-size: 1.2rem;
+            color: inherit;
+        }
+		.Date {padding: 0.9rem 1rem;}
+        .form-box{
+            padding: 0.5rem 0;
+            display: flex;
+            flex-direction: column;
+        }
+       
+        .form-box input,
+        .form-box select,
+        .form-box textarea{
+            flex-basis: 100%;
+        }
+        .form-box button{
+            
+        }
+		
+	      @media only screen and (min-width:500px)
+            {
+            .form-box
+			.Date{
+				padding: 0.2rem 1rem;
+			}
+		
+            .form-box label{
+                display:block;
+            }
+            .form-box input,
+            .form-box select,
+            .form-box textarea{
+                
+            }
+            .form-box button{
+
+            }
+        }
+        
+        @media all and (min-width: 1440px){
+            
+            .form-box label{
+                flex-basis: 1rem;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+			
+			.Date {padding: 0.2rem 1rem;}
+            .form-box input,
+            .form-box select,
+            .form-box textarea{
+                flex-basis: 0;
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+            .form-box button{
+                margin-left: 9rem;
+            }
+        }
+</style>
+</head>
+<body>
+<h1>Assignment 7 - working with forms</h1>
+<main>
+
+    
+        <form class="form1" action="#" method="post">
+            <div class="form-box">
+                <label>First Name</label>
+                <input type="text"  name="text" placeholder="First Name" maxlength="15" required>
+            </div>
+            
+            
+            <div class="form-box">
+                <label>Last Name</label>
+                <input type="text"  name="text" placeholder="Last Name" maxlength="25">
+            </div>
+            
+              <div class="form-box">
+                <label>Age</label>
+                <input type="number" id="age"  name="age" min="18" max="65" placeholder="Enter Your Age">
+            </div>
+            
+            <div class="form-box">
+                <label>Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            
+            
+            <div class="form-box">
+                <label>Date of Membership</label>
+                <input type="date" id="Date" class="Date" name="Date" max="2021-12-31">
+
+            </div>
+            
+            
+            <div class="form-box">
+                <label for="reward">Choose your reward</label>
+                <select id="reward" name="reward">
+                   <option disabled selected value> -- select an option -- </option>
+                   <option value="Subscription">Two-year Magazine Subscription</option>
+                   <option value="Tickits">2 Tickits to Annual Seminar</option>
+                   <option value="Voucher">Voucher $100 Food During Seminar</option>
+                   <option value="hotel">1 - day hotel stay for Seminar</option>
+                </select>
+            </div>
+            	
+            <div><input type="submit" value="Submit" class="button"> &nbsp; <input type="reset" class="button" value="Clear"></div>
+        </form>
+        
+         <div class="project"><a href="assignments.html">Assignments page</a></div>
+         
+    </main>
+</body>
+</html>
