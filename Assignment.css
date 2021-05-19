@@ -7,56 +7,158 @@
 	padding:0;
 	box-sizing:border-box;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#FFF;
+}
+
 .top
 {
    text-align:center;	
+   background-color:#000;
+   
+   color:#FFF;
 }
 table
 {
 font-size:25px;
-width:100px;	
+width:50%;	
 margin:auto;
-color:#FFF;
+color:#000;
+margin-left:65px;	
 }
 table tr th 
 {
    text-align:center;
-   padding-left:20px;
-   border:#FFF 1px solid;	
+   border:#000 1px solid;	
 }
+
 table tr td
 {
    text-align:center;
-   border:#FFF 1px solid;	
+   border: 1px solid;
+   padding:10px;
+   
 }
 
 table a
 {	
 	text-decoration:none;
-	color:#FFF
+	color:#000;
 }
 table a:hover
 {
-  color:#A7A7A7;	
-}
-body
-{
-	background-color:#1b2838;
-}
-.container
-{
-	max-width: 1100px;
-	margin:0 auto;
-	padding: 0 3rem;
-	margin-top: 2rem;
-	text-align: center;	
+	color:#0057AE;
 }
 h1
 {
-	color:#FFF;
-	font-size: 3rem;
+	color:#000;
+	font-size: 40px;
 	font-weight:700;
 	letter-spacing:4px;
-	padding-bottom:50px;
+	padding:16px;
+	margin-bottom:20px;
+}
+.footer-bottom
+{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size:12px; 
+	background:#343a40;
+	color:white;
+	height:40px ;
+	margin-right:auto;
+	text-align:center;
+	bottom:0px;
+	left: 0px;
+    width:100%;
+    padding-top:10px;
+}
+.footer-bottom a
+{
+	text-decoration:none;
+	color:#FFF;
+	border:#FFF solid 1px;		
+}
+.flex
+{
+	display:flex;
+	padding-bottom:229px;
+	
+}
+.list
+{
+   width:20%;
+   text-align:center;
+   background-color:#FFF;
+   border-right:1px #000000 solid;	
+}
+.list ul li 
+{
+    text-align:left;
+	line-height:50px;	
+	text-align:center;
 }
 
+.list ul li a
+{ 		
+	text-decoration:none;
+	font-size:24px;	
+	color:#333;
+}
+.footer-bottom a:hover
+{
+   color:#848BB3;
+}
+span
+{
+	font-size:15px;	
+}
+@media screen and (max-width: 600px) 
+{
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  h1
+  {
+	  font-size:25px;
+	  padding-top:17px;  
+	  margin-bottom:0px;
+  }
+  .list
+  {
+	width:100%;
+	margin-left:8px;
+	padding-bottom:10%;	  
+  }
+  .list ul li a
+  {
+	font-size:20px;
+	margin-right:15px;
+	border:#000 solid 1px;
+	padding:3px;
+	  }
+  .nav {
+  display:inline-block;
+  }
+  .nav li 
+   {
+   text-align:center;
+   display: inline-block;
+   line-height:10px;
+   }
+  .flex
+  {
+	 display:block;  
+  }
+   .footer-bottom
+  {
+	 padding-top:7px; 
+  }
+  table
+  {  
+	margin:auto;  
+  }
+
+  
+}
