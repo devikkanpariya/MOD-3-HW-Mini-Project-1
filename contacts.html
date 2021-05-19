@@ -5,6 +5,199 @@
 <meta name="description" content="mini-project">
 <meta charset="utf-8">
 <link rel="=stylesheet" href="contacts.css" type="text/css">
+<style>
+	body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {	
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email]
+{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;	
+}
+input[type=submit] {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding:10px;
+  width:100%;
+}
+
+.column {
+  float:right;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.list
+{
+   width:20%;
+   text-align:center;
+   background-color:#FFF;
+}
+.list ul li 
+{
+    text-align:left;
+	line-height:50px;	
+	text-align:center;
+}
+
+.list ul li a
+{ 		
+	text-decoration:none;
+	font-size:24px;	
+	color:#333;
+}
+.list ul li :hover
+{
+color:#666;	
+}
+.flex
+{
+  display:flex;	
+}
+.header
+{
+	color:#FFF;
+	background-color:#000;
+	margin:auto;
+	padding:7px;
+	font-size:20px;
+	letter-spacing:6px;
+	text-align: center;	
+    max-width:100%;
+	height:80px;
+	}
+.header h1
+{
+   padding-top:7px;		
+}
+h3
+{
+	padding-top:20px;
+    padding-bottom:10px;
+	background-color:#FFF;
+	width:100%;
+ 	margin-right:50%;
+	text-align:center;
+}
+h2
+{
+  padding-top:40px;	
+}
+.footer-bottom
+{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size:12px; 
+	background:#343a40;
+	color:white;
+	height:40px ;
+	margin-right:auto;
+	text-align:center;
+	bottom:0px;
+	left: 0px;
+    width:100%;
+    padding-top:15px;
+}
+.footer-bottom a 
+{
+	text-decoration:none;
+	color:#FFF;
+	border:#FFF solid 1px;
+	font-size:15px;		
+}
+.footer-bottom a:hover
+{
+   color:#848BB3;
+}
+span
+{
+	font-size:15px;	
+}
+@media screen and (max-width: 600px) 
+{
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .header h1
+  {
+	  font-size:25px;
+	  padding-top:17px;  
+	  margin-bottom:0px;
+  }
+  .list
+  {
+	width:100%;
+	margin-left:8px;	  
+  }
+  .list ul li a
+  {
+	font-size:20px;
+	margin-right:15px;
+	border:#000 solid 1px;
+	padding:3px;
+	  }
+  .nav {
+  display:inline-block;
+  }
+  .nav li 
+   {
+   text-align:center;
+   display: inline-block;
+   line-height:10px;
+   }
+  .flex
+  {
+	 display:block;  
+  }
+   .footer-bottom
+  {
+	 padding-top:7px; 
+  }
+  .container
+  {
+	padding-top:0px;  
+  }
+
+  
+}
+</style>
 </head>
 <body>
 
