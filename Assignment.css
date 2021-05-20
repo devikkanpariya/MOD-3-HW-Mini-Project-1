@@ -160,5 +160,9 @@ span
 	margin:auto;  
   }
 
-  
+  .footer-bottom
+	   {
+		   padding:45px;
+                   padding-top:5px;	
+	   }
 }
